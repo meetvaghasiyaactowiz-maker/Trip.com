@@ -1,6 +1,6 @@
 from playwright.sync_api import sync_playwright
 import json
-
+import requests
 
 def extract_bedroom_data(raw):
     payload = raw.get("data", raw)
@@ -92,11 +92,8 @@ def extract_bedroom_data(raw):
     }
 
 
-# ──────────────────────────────────────────────
-#  PLAYWRIGHT PARSER
-# ──────────────────────────────────────────────
 
-captured = {}   # filled by parser callback
+captured = {}   
 
 def parser(response):
     """Capture Trip.com room API response."""
@@ -157,32 +154,148 @@ def _print_summary(data: dict):
         print()
     print(sep)
 
+def get_city_detailes(city):
+    json_data = {
+        'code': 0,
+        'codeType': '',
+        'keyWord': f'{city}',
+        'searchType': 'D',
+        'scenicCode': 0,
+        'cityCodeOfUser': 0,
+        'searchConditions': [
+            {
+                'type': 'D_PROVINCE',
+                'value': 'T',
+            },
+            {
+                'type': 'SupportNormalSearch',
+                'value': 'T',
+            },
+            {
+                'type': 'DisplayTagIcon',
+                'value': 'F',
+            },
+        ],
+        'head': {
+            'platform': 'PC',
+            'clientId': '1780044424753.a709Z3UkocAu',
+            'bu': 'ibu',
+            'group': 'TRIP',
+            'aid': '',
+            'sid': '',
+            'ouid': '',
+            'currency': 'GBP',
+            'region': 'IN',
+            'locale': 'en-IN',
+            'timeZone': '5.5',
+            'device': 'PC',
+            'deviceID': 'PC',
+            'clientVersion': '0',
+            'frontend': {
+                'vid': '1780044424753.a709Z3UkocAu',
+                'sessionID': '4',
+                'pvid': '8',
+            },
+            'extension': [
+                {
+                    'name': 'cityId',
+                    'value': '',
+                },
+                {
+                    'name': 'checkIn',
+                    'value': '',
+                },
+                {
+                    'name': 'checkOut',
+                    'value': '',
+                },
+            ],
+            'cid': '1780044424753.a709Z3UkocAu',
+            'hotelExtension': {
+                'webpSupport': True,
+            },
+            'traceLogID': 'a30cc3810ebf18',
+            'ticket': '',
+            'hasAidInUrl': 'false',
+            'href': 'https://in.trip.com/?locale=en-in',
+        },
+    }
+    headers = {
+        'accept': 'application/json',
+        'accept-language': 'en-US,en;q=0.9',
+        'content-type': 'application/json',
+        'cookieorigin': 'https://in.trip.com',
+        'origin': 'https://in.trip.com',
+        'priority': 'u=1, i',
+        'referer': 'https://in.trip.com/?locale=en-in',
+        'sec-ch-ua': '"Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"',
+        'sec-ch-ua-mobile': '?0',
+        'sec-ch-ua-platform': '"Windows"',
+        'sec-fetch-dest': 'empty',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-site': 'same-origin',
+        'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36',
+        # 'cookie': 'GUID=09034103416916845122; UBT_VID=1780044424753.a709Z3UkocAu; ibulanguage=EN; cookiePricesDisplayed=GBP; _RGUID=5bf4b4fb-4630-488c-9e59-ebea199d506a; _abtest_userid=f58b220a-830f-460e-9d9d-24d7a1b5a5bd; _gcl_au=1.1.1829932973.1780044444; _twpid=tw.1780044445642.185128131710031731; ibu_pwa_insvisit=%7B%22vid%22%3A%221780044424753.a709Z3UkocAu%22%2C%22time%22%3A1780045773078%7D; _fbp=fb.1.1780045829219.589662370156194485; _ga_37RNVFDP1J=GS2.2.s1780047715$o1$g0$t1780047715$j60$l0$h0; _ga=GA1.1.53443069.1780045769; ibulocale=en_in; ibu_country=IN; ibu_cookie_strict=0; _tp_search_latest_channel_name=hotels; _fwb=6834xoUO8zvMPrHMfd1Dhc.1780048198673; w_lid=016a1962a753225aa420; nfes_isSupportWebP=1; ibu_hotel_search_crn_guest=%7B%22adult%22%3A2%2C%22children%22%3A0%2C%22ages%22%3A%22%22%2C%22crn%22%3A1%7D; oldCurrency=GBP; ibu_online_jump_site_result={"isShowSuggestion":false}; ubtc_trip_pwa=0; x-ctx-user-recognize=IS_EU; w_tuid=nzcGs5J1FHAqI8dKYrEz0NkJqVo9hZBEBQW7SfgkfpKdjeEa0R3kxbhzhLQRXarrG2sxOd1c1luPKMnEWX8tWi8hKfA7IwgOgXiYYdIIJDsUiTGiG2xYpam4tVSqr6emM61hNkSICszmwlybhzAkzpQPeKiL9LV0P+nGO1Pnh/faKjP7eS4fDl5OUEPJfeIX2A==:1_1_1_1.0zNV1OPFX+CA6O07VsUQ90amcT+KxRhylH3Q7ltTMNo=; IBU_TRANCE_LOG_P=64328600306; ibu_hotel_search_date=%7B%22checkIn%22%3A%222026-06-01%22%2C%22checkOut%22%3A%222026-06-02%22%2C%22isChoseFlexible%22%3Afalse%2C%22flexibleDate%22%3A%7B%22selectNight%22%3A0%7D%2C%22dayFlexibility%22%3A0%7D; ibu_hotel_search_target=%7B%22countryId%22%3A107%2C%22provinceId%22%3A10556%2C%22searchWord%22%3A%22Mumbai%22%2C%22cityId%22%3A724%2C%22searchType%22%3A%22%22%2C%22searchValue%22%3A%22%22%2C%22cityName%22%3A%22Mumbai%22%7D; tncr=0; ibu_online_permission_cls_ct=2; ibu_online_permission_cls_gap=1780289495235; ibu_webpush_scope=%252F; GUID.sig=BjW1rTe9VJJtR_r3IzdV8k4sTAHrDpDfAM30-uGohIY; GUID=09034103416916845122; _resDomain=https%3A%2F%2Faw-s.tripcdn.com; ibusite=IN; ibugroup=trip; IBU_showtotalamt=0; intl_ht1=h4%3D724_112421210%2C495_127688912%2C495_758417; _ga_X437DZ73MR=GS2.1.s1780289075$o5$g1$t1780291023$j60$l0$h0; _bfa=1.1780044424753.a709Z3UkocAu.1.1780290706667.1780291023551.4.8.10320668088; wcs_bt=s_33fb334966e9:1780291025; _uetsid=8f06da805d7411f183c6ab0abf09a142; _uetvid=050fd5805b3b11f18c6d5135257d3c97; g_state={"i_l":0,"i_ll":1780291026821,"i_b":"ReljxP890ookHzh/w40A5P8HiuU34k+PhAqNd/7lwpo","i_e":{"enable_itp_optimization":0},"i_et":1780048199456}',
+    }
+
+    
+    response = requests.post('https://in.trip.com/htls/getKeywordSearch', headers=headers, json=json_data)
+
+    if response:
+        jsondata = response.json()
+        firstresult = jsondata.get("keyWordSearchResults")[0]
+        search_values = firstresult.get("item").get("data")
+        coordinateInfos = firstresult.get("coordinateInfos")
+        params = {
+            "city" : firstresult.get("city").get("geoCode"),
+            "cityName" : firstresult.get("city").get("enusName"),
+            "provinceId":firstresult.get("province").get("geoCode"),
+            "countryId":firstresult.get("country").get("geoCode"),
+            "lat":firstresult.get("coordinateInfos")[0].get("latitude"),
+            "lon":firstresult.get("coordinateInfos")[0].get("longitude"),
+            "districtId":0,
+            "barCurr":"INR",
+            "searchType":firstresult.get("resultType"),
+            "searchWord":firstresult.get("resultWord"),
+            "searchValue":f"{search_values.get("filterID")}*{search_values.get("type")}*{search_values.get("value")}*{search_values.get("subType")}",
+            "searchCoordinate":f"BAIDU_{coordinateInfos[0].get("latitude")}_{coordinateInfos[0].get("longitude")}_0|GAODE_{coordinateInfos[1].get("latitude")}_{coordinateInfos[1].get("longitude")}_0|GOOGLE_{coordinateInfos[2].get("latitude")}_{coordinateInfos[2].get("longitude")}_0|NORMAL_{coordinateInfos[3].get("latitude")}_{coordinateInfos[3].get("longitude")}_0",
+            "crn":1,
+            "searchBoxArg":"t",
+            "ctm_ref":"ix_sb_dl",
+            "travelPurpose":0,
+            "domestic":False
+        }
+
+        return params
 
 
-city       = "Surat"
-city_id    = 60194
-country_id = 107
-check_in   = "2026-06-20"
-check_out  = "2026-07-04"
-adults     = 2
-rooms      = 1
+city = input('Enter a city_name:')
+check_in = input('Enter a check in date:')
+check_out = input('Enter a check out date:')
+adutls = input('Enter a adult count:')
+children = input('Enter a children count:')
+rooms = input('Enter a rooms count:')
+
+data = get_city_detailes(city)
 
 hotel_list_url = (
     f"https://in.trip.com/hotels/list"
     f"?locale=en-IN"
     f"&lat=-1&lon=-1&coordType=GOOGLE"
     f"&optionName={city}"
-    f"&cityId={city_id}"
+    f"&cityId={data.get('city')}"
     f"&checkIn={check_in}"
     f"&checkOut={check_out}"
-    f"&adult={adults}"
+    f"&adult={adutls}"
     f"&crn={rooms}"
-    f"&optionid={city_id}"
+    f"&optionid={data.get('city')}"
     f"&optiontype=IntlCity"
-    f"&countryId={country_id}"
+    f"&countryId={data.get('countryId')}"
 )
 
-print("\nHOTEL LIST URL:\n", hotel_list_url)
+print(hotel_list_url)
+
+print("HOTEL LIST URL:", hotel_list_url)
 
 
 with sync_playwright() as p:
@@ -216,3 +329,4 @@ with sync_playwright() as p:
 
     browser.close()
     print("Done")
+
