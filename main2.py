@@ -3,17 +3,12 @@ import json
 
 
 def extract_bedroom_data(raw):
-    """
-    Parse Trip.com getHotelRoomListOversea response and return
-    a clean, client-ready dict with all room / rate info.
-    """
     payload = raw.get("data", raw)
 
     physic_map  = payload.get("physicRoomMap", {})   
     sale_map    = payload.get("saleRoomMap",   {})   
     room_list   = payload.get("roomList",      [])    
 
-    # ── 1. Build physical room catalogue ──────────────────────────
     physical_rooms: dict[str, dict] = {}
     for pid, pr in physic_map.items():
         pics = [p.get("url", "") for p in pr.get("pictureInfo", []) if p.get("url")]
@@ -163,9 +158,6 @@ def _print_summary(data: dict):
     print(sep)
 
 
-# ──────────────────────────────────────────────
-#  CONFIG
-# ──────────────────────────────────────────────
 
 city       = "Surat"
 city_id    = 60194
@@ -193,10 +185,6 @@ hotel_list_url = (
 print("\nHOTEL LIST URL:\n", hotel_list_url)
 
 
-# ──────────────────────────────────────────────
-#  MAIN
-# ──────────────────────────────────────────────
-
 with sync_playwright() as p:
 
     browser = p.chromium.launch(
@@ -210,18 +198,12 @@ with sync_playwright() as p:
 
     context = browser.new_context(no_viewport=True)
 
-    # ✅ Attach listener to context (catches all pages/tabs)
     context.on("response", parser)
 
     page = context.new_page()
     page.goto(hotel_list_url)
-
-    # Click first hotel card
     page.locator("a.hotelName").first.click()
-
-    print("\nHotel listing loaded – waiting for API...\n")
-
-    # Poll until API data is captured (up to 15 s)
+    print("load....")
     import time
     for _ in range(30):
         if captured:
@@ -229,8 +211,8 @@ with sync_playwright() as p:
         time.sleep(0.5)
 
     if not captured:
-        print("⚠️  API not captured yet — keeping browser open.")
+        print("api not found")
         page.wait_for_timeout(8000)
 
     browser.close()
-    print("\n✅ Done. Output → hotel_rooms_clean.json")
+    print("Done")
