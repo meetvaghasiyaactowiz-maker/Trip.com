@@ -1,5 +1,6 @@
 from playwright.sync_api import sync_playwright
 from parser import *
+from datetime import datetime
 
 city = input('Enter a city_name:')
 check_in = input('Enter a check in date:')
@@ -29,7 +30,7 @@ print(hotel_list_url)
 
 print("HOTEL LIST URL:", hotel_list_url)
 
-
+start_time = datetime.now()
 with sync_playwright() as p:
 
     browser = p.chromium.launch(
@@ -41,23 +42,30 @@ with sync_playwright() as p:
         ],
     )
 
-    context = browser.new_context(no_viewport=True)
-
+    context = browser.new_context(
+        permissions=["geolocation"],
+        geolocation={"latitude": 37.7749, "longitude": -122.4194} # Optional: Mock coordinates
+    )
+ 
     context.on("response", parser)
 
     page = context.new_page()
     page.goto(hotel_list_url)
+    page.wait_for_timeout(1000)
     page.locator("a.hotelName").first.click()
+    page.wait_for_timeout(4000)
     print("load....")
-    import time
-    for _ in range(30):
-        if captured:
-            break
-        time.sleep(0.5)
+    end_time = datetime.now()
+    print("------------------",end_time-start_time)
+    # import time
+    # for _ in range(30):
+    #     if captured:
+    #         break
+    #     time.sleep(0.5)
 
-    if not captured:
-        print("api not found")
-        page.wait_for_timeout(8000)
+    # if not captured:
+    #     print("api not found")
+    #     page.wait_for_timeout(8000)
 
     browser.close()
     print("Done")

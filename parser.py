@@ -1,6 +1,6 @@
 from playwright.sync_api import sync_playwright
 import json
-import requests
+from curl_cffi import requests
 
 def extract_bedroom_data(raw):
     payload = raw.get("data", raw)
@@ -89,8 +89,6 @@ def extract_bedroom_data(raw):
         "total_rates"    : len(rates),
     }
 
-
-
 captured = {}   
 
 def parser(response):
@@ -121,7 +119,6 @@ def parser(response):
             print(response.text())
         except:
             pass
-
 
 def _print_summary(data: dict):
     sep = "=" * 60
@@ -231,7 +228,7 @@ def get_city_detailes(city):
     }
 
     
-    response = requests.post('https://in.trip.com/htls/getKeywordSearch', headers=headers, json=json_data)
+    response = requests.post('https://in.trip.com/htls/getKeywordSearch', headers=headers, json=json_data, impersonate="chrome120")
 
     if response:
         jsondata = response.json()
