@@ -2,7 +2,7 @@ from playwright.sync_api import sync_playwright
 import json
 from curl_cffi import requests
 
-def extract_bedroom_data(raw):
+def extract_bedroom_data(raw,url):
     payload = raw.get("data", raw)
 
     physic_map  = payload.get("physicRoomMap", {})   
@@ -36,6 +36,16 @@ def extract_bedroom_data(raw):
         confirm  = sr.get("confirmInfo", {})
         guests   = sr.get("guestCountInfo", {})
         title    = sr.get("titleInfo",  {})
+        price_info = sr.get('priceDetail',{}).get('priceInfo',{}).get('paymentPlan')
+        prices = []
+
+        for p in price_info:
+            for d in p.get("details", []):
+                prices.append({
+                    "title": d.get("title"),
+                    "content": d.get("content"),
+                    "meta_info": {child.get("title"): child.get("content") for child in d.get("children", []) if d.get('children')} or None
+                })
 
         rates.append({
             "rate_key": rate_key,
@@ -49,12 +59,14 @@ def extract_bedroom_data(raw):
             "guest_count": guests.get("guestCount"),
             "child_count": guests.get("childCount", 0),
             "cancellation_policy": cancel.get("simpleDesc") or cancel.get("title"),
-            "free_cancellation": cancel.get("type") == 3,     # 3 = free cancel, 5 = non-refundable
+            "free_cancellation": cancel.get("type") == 3,  
             "confirmation_type": confirm.get("title"),
             "available": booking.get("isBooking", False),
             "rooms_remaining": booking.get("remainRoomQuantity"),
             "sold_out": booking.get("isFullRoom", False),
             "offer_label": title.get("title"),
+            'price_meta_info':prices
+            
         })
 
     rates.sort(key=lambda r: r["price_INR"] or float("inf"))
@@ -69,7 +81,6 @@ def extract_bedroom_data(raw):
             pr["cheapest_price_INR"] = None
             pr["cheapest_offer"]     = None
 
-    # Sort physical rooms by rank preserved in physicRoomMap
     sorted_rooms = sorted(
         physical_rooms.values(),
         key=lambda r: physic_map.get(str(r["physical_room_id"]), {}).get("physicRank", 99)
@@ -85,30 +96,29 @@ def extract_bedroom_data(raw):
 
     return {
         "search_details" : meta,
+        'hotel_url'      : url,
         "rooms"          : sorted_rooms,
         "total_rates"    : len(rates),
     }
 
 captured = {}   
 
-def parser(response):
-    """Capture Trip.com room API response."""
+def parser(response,url):
     if "getHotelRoomListOversea" not in response.url:
         return
-
+    
     print("\n================ API FOUND ================\n")
     print(f"URL    : {response.url}")
     print(f"STATUS : {response.status}")
-
+    
     try:
+        
         raw = response.json()
-
-
-        clean = extract_bedroom_data(raw)
+        clean = extract_bedroom_data(raw,url)
 
         with open("hotel_rooms_clean.json", "w", encoding="utf-8") as f:
             json.dump(clean, f, indent=4, ensure_ascii=False)
-        print("[✓] Clean JSON saved → hotel_rooms_clean.json")
+        print('data was save')
 
         captured.update(clean)
         _print_summary(clean)

@@ -1,0 +1,848 @@
+{
+    "search_details": {
+        "check_in": "20260601",
+        "check_out": "20260602",
+        "adults": 2,
+        "rooms_queried": 1,
+        "total_rooms_available": 15
+    },
+    "hotel_url": "https://in.trip.com/hotels/detail/?cityEnName=Gandhinagar&cityId=60080&hotelId=43095780&checkIn=2026-06-01&checkOut=2026-06-02&adult=2&children=0&crn=1&ages=&curr=INR&barcurr=INR&hoteluniquekey=H4sIAAAAAAAA_-M6ysTFJMEktY-J48CKY_1sQoxGBvIWXwUdjUHgdbGDJ9f1xQW2r0ocAnhmMD5Ze0xkI-PDKpF17g_1HXYwMp1g_KW0gGn3y8dCp1jYOB6vY5RgucRyhjG6Wik7tVLJykRHqSSzJCdVyUrJPT8_pVghptTAwMhMoTi1qCwzObVYoSSxQklHKSW1OBmoBMhKzM0vzSsBso2MjPXMDYEiQBWeKUpWRqY6SsmJOcmlOYklqSGVBUAjLXSUMoudS4oyC4JSczNLSlKBytISc4pTQeJBqcVAmWSwoJIf0JwiqEBmfh5EuwGKWFhiTmkqxA1AG91SoXYY1sY-YmGKjv3EwvCLhaGJlaGLlWESKzPHLZVdrDxBrpYRvpG6hrpRuoZS8oYGBgamhsamproGiZaJlmYW5romliamRha6FmZmloYa8-9-nPTC2Ej2FKOUobmFgbEBUKmJmaGZXkqahXGaX3lIVYpnogdjEJuTiYmFsVuUDRezp1-QIHtNnYSizSZ7KRBPEcbTAvEMYbxAVfY3WZ-mtNpHrlbr2MXvsMk-iTU1T9fTL2OKaAFjFyO3AKMHYwRjBWMDI-MqRnYuZgMjQwGmDYyMOxj_wwDjK0aQmQD5aBpgEAIAAA&masterhotelid_tracelogid=100051355-0a9a9687-494528-86691&detailFilters=17%7C1~17~1*80%7C0%7C1~80~0*29%7C1~29~1%7C2&hotelType=normal&display=exavg&subStamp=750&isCT=true&isFlexible=F&isFirstEnterDetail=T&locale=en-IN&isRightClick=T",
+    "rooms": [
+        {
+            "physical_room_id": 347893523,
+            "name": "Junior Suite",
+            "bed_type": "1 queen bed",
+            "area": "39㎡",
+            "view": "City view",
+            "smoking_policy": "Non-smoking",
+            "wifi": "Free Wi-Fi",
+            "facilities": [
+                "City view",
+                "Non-smoking",
+                "39㎡",
+                "Free Wi-Fi",
+                "Air conditioning (Cooling only)",
+                "Private bathroom"
+            ],
+            "images": [
+                "https://ak-d.tripcdn.com/images/0222t12000q8otrumA5FB.jpg",
+                "https://ak-d.tripcdn.com/images/0224712000oju4q2f361D.jpg",
+                "https://ak-d.tripcdn.com/images/0224p12000amf42gnC9E4.jpg",
+                "https://ak-d.tripcdn.com/images/0225q12000c3o6l5370B2.jpg",
+                "https://ak-d.tripcdn.com/images/0222e120008c2rci5CAC0.jpg",
+                "https://ak-d.tripcdn.com/images/0224p12000akxpo64B658.jpg",
+                "https://ak-d.tripcdn.com/images/0225812000c3ol3v5EFAE.jpg",
+                "https://ak-d.tripcdn.com/images/0225412000oju3y338481.jpg",
+                "https://ak-d.tripcdn.com/images/0226n12000amf40hvB1EB.jpg"
+            ],
+            "rates": [
+                {
+                    "rate_key": "1643222065_RE9XM2-1-Z-1",
+                    "room_code": "RE9XM2-1-Z-1",
+                    "physical_room_id": "347893523",
+                    "physical_room_name": "Junior Suite",
+                    "price_INR": 9267.2,
+                    "payment_method": "Prepay online",
+                    "meal_included": true,
+                    "meal_description": "Great breakfast for ₹ 799.00 (optional)",
+                    "guest_count": 2,
+                    "child_count": 0,
+                    "cancellation_policy": "Non-refundable",
+                    "free_cancellation": false,
+                    "confirmation_type": "Instant confirmation",
+                    "available": true,
+                    "rooms_remaining": 7,
+                    "sold_out": false,
+                    "offer_label": "Room only",
+                    "price_meta_info": [
+                        {
+                            "title": "1 room × 1 night",
+                            "content": "₹ 7,853.56",
+                            "meta_info": null
+                        },
+                        {
+                            "title": "Goods & services tax",
+                            "content": "₹ 1,413.64",
+                            "meta_info": null
+                        }
+                    ]
+                },
+                {
+                    "rate_key": "1643222088_RE9XK3-B-9-B",
+                    "room_code": "RE9XK3-B-9-B",
+                    "physical_room_id": "347893523",
+                    "physical_room_name": "Junior Suite",
+                    "price_INR": 9753.73,
+                    "payment_method": "Prepay online",
+                    "meal_included": true,
+                    "meal_description": "Includes 1 great breakfast",
+                    "guest_count": 1,
+                    "child_count": 0,
+                    "cancellation_policy": "Non-refundable",
+                    "free_cancellation": false,
+                    "confirmation_type": "Instant confirmation",
+                    "available": true,
+                    "rooms_remaining": 7,
+                    "sold_out": false,
+                    "offer_label": "Breakfast included",
+                    "price_meta_info": [
+                        {
+                            "title": "1 room × 1 night",
+                            "content": "₹ 8,265.87",
+                            "meta_info": null
+                        },
+                        {
+                            "title": "Goods & services tax",
+                            "content": "₹ 1,487.86",
+                            "meta_info": null
+                        }
+                    ]
+                },
+                {
+                    "rate_key": "1643222088_RE9XK3-1-Z-1",
+                    "room_code": "RE9XK3-1-Z-1",
+                    "physical_room_id": "347893523",
+                    "physical_room_name": "Junior Suite",
+                    "price_INR": 10240.26,
+                    "payment_method": "Prepay online",
+                    "meal_included": true,
+                    "meal_description": "Includes 2 great breakfasts",
+                    "guest_count": 2,
+                    "child_count": 0,
+                    "cancellation_policy": "Non-refundable",
+                    "free_cancellation": false,
+                    "confirmation_type": "Instant confirmation",
+                    "available": true,
+                    "rooms_remaining": 7,
+                    "sold_out": false,
+                    "offer_label": "Breakfast included",
+                    "price_meta_info": [
+                        {
+                            "title": "1 room × 1 night",
+                            "content": "₹ 8,678.19",
+                            "meta_info": null
+                        },
+                        {
+                            "title": "Goods & services tax",
+                            "content": "₹ 1,562.07",
+                            "meta_info": null
+                        }
+                    ]
+                },
+                {
+                    "rate_key": "1643222065_RE9XM2-C-U-C",
+                    "room_code": "RE9XM2-C-U-C",
+                    "physical_room_id": "347893523",
+                    "physical_room_name": "Junior Suite",
+                    "price_INR": 10425.6,
+                    "payment_method": "Prepay online",
+                    "meal_included": true,
+                    "meal_description": "Great breakfast for ₹ 799.00 (optional)",
+                    "guest_count": 3,
+                    "child_count": 0,
+                    "cancellation_policy": "Non-refundable",
+                    "free_cancellation": false,
+                    "confirmation_type": "Instant confirmation",
+                    "available": true,
+                    "rooms_remaining": 7,
+                    "sold_out": false,
+                    "offer_label": "Room only",
+                    "price_meta_info": [
+                        {
+                            "title": "1 room × 1 night",
+                            "content": "₹ 8,835.25",
+                            "meta_info": null
+                        },
+                        {
+                            "title": "Goods & services tax",
+                            "content": "₹ 1,590.35",
+                            "meta_info": null
+                        }
+                    ]
+                },
+                {
+                    "rate_key": "1674796346_RODODQ-B-9-B",
+                    "room_code": "RODODQ-B-9-B",
+                    "physical_room_id": "347893523",
+                    "physical_room_name": "Junior Suite",
+                    "price_INR": 10425.6,
+                    "payment_method": "Prepay online",
+                    "meal_included": true,
+                    "meal_description": "Includes breakfast and dinner for 1 guest",
+                    "guest_count": 1,
+                    "child_count": 0,
+                    "cancellation_policy": "Non-refundable",
+                    "free_cancellation": false,
+                    "confirmation_type": "Instant confirmation",
+                    "available": true,
+                    "rooms_remaining": 7,
+                    "sold_out": false,
+                    "offer_label": "Breakfast and dinner included",
+                    "price_meta_info": [
+                        {
+                            "title": "1 room × 1 night",
+                            "content": "₹ 8,835.25",
+                            "meta_info": null
+                        },
+                        {
+                            "title": "Goods & services tax",
+                            "content": "₹ 1,590.35",
+                            "meta_info": null
+                        }
+                    ]
+                },
+                {
+                    "rate_key": "1674796346_RODODQ-1-Z-1",
+                    "room_code": "RODODQ-1-Z-1",
+                    "physical_room_id": "347893523",
+                    "physical_room_name": "Junior Suite",
+                    "price_INR": 11584,
+                    "payment_method": "Prepay online",
+                    "meal_included": true,
+                    "meal_description": "Includes breakfast and dinner for 2 guests",
+                    "guest_count": 2,
+                    "child_count": 0,
+                    "cancellation_policy": "Non-refundable",
+                    "free_cancellation": false,
+                    "confirmation_type": "Instant confirmation",
+                    "available": true,
+                    "rooms_remaining": 7,
+                    "sold_out": false,
+                    "offer_label": "Breakfast and dinner included",
+                    "price_meta_info": [
+                        {
+                            "title": "1 room × 1 night",
+                            "content": "₹ 9,816.95",
+                            "meta_info": null
+                        },
+                        {
+                            "title": "Goods & services tax",
+                            "content": "₹ 1,767.05",
+                            "meta_info": null
+                        }
+                    ]
+                },
+                {
+                    "rate_key": "1643222088_RE9XK3-C-U-C",
+                    "room_code": "RE9XK3-C-U-C",
+                    "physical_room_id": "347893523",
+                    "physical_room_name": "Junior Suite",
+                    "price_INR": 11885.18,
+                    "payment_method": "Prepay online",
+                    "meal_included": true,
+                    "meal_description": "Includes 3 great breakfasts",
+                    "guest_count": 3,
+                    "child_count": 0,
+                    "cancellation_policy": "Non-refundable",
+                    "free_cancellation": false,
+                    "confirmation_type": "Instant confirmation",
+                    "available": true,
+                    "rooms_remaining": 7,
+                    "sold_out": false,
+                    "offer_label": "Breakfast included",
+                    "price_meta_info": [
+                        {
+                            "title": "1 room × 1 night",
+                            "content": "₹ 10,072.19",
+                            "meta_info": null
+                        },
+                        {
+                            "title": "Goods & services tax",
+                            "content": "₹ 1,812.99",
+                            "meta_info": null
+                        }
+                    ]
+                },
+                {
+                    "rate_key": "1674796346_RODODQ-C-U-C",
+                    "room_code": "RODODQ-C-U-C",
+                    "physical_room_id": "347893523",
+                    "physical_room_name": "Junior Suite",
+                    "price_INR": 13900.8,
+                    "payment_method": "Prepay online",
+                    "meal_included": true,
+                    "meal_description": "Includes breakfast and dinner for 3 guests",
+                    "guest_count": 3,
+                    "child_count": 0,
+                    "cancellation_policy": "Non-refundable",
+                    "free_cancellation": false,
+                    "confirmation_type": "Instant confirmation",
+                    "available": true,
+                    "rooms_remaining": 7,
+                    "sold_out": false,
+                    "offer_label": "Breakfast and dinner included",
+                    "price_meta_info": [
+                        {
+                            "title": "1 room × 1 night",
+                            "content": "₹ 11,780.34",
+                            "meta_info": null
+                        },
+                        {
+                            "title": "Goods & services tax",
+                            "content": "₹ 2,120.46",
+                            "meta_info": null
+                        }
+                    ]
+                }
+            ],
+            "cheapest_price_INR": 9267.2,
+            "cheapest_offer": "Room only"
+        },
+        {
+            "physical_room_id": 347893525,
+            "name": "Superior Twin Room",
+            "bed_type": "2 single beds",
+            "area": "24㎡",
+            "view": "City view",
+            "smoking_policy": "Non-smoking",
+            "wifi": "Free Wi-Fi",
+            "facilities": [
+                "City view",
+                "Non-smoking",
+                "24㎡",
+                "Free Wi-Fi",
+                "Air conditioning (Cooling only)",
+                "Private bathroom"
+            ],
+            "images": [
+                "https://ak-d.tripcdn.com/images/0222f12000c3o6xkj9D65.jpg",
+                "https://ak-d.tripcdn.com/images/0224z12000k2lkii6D262.jpg",
+                "https://ak-d.tripcdn.com/images/0586d12000sned0o3233C.jpg",
+                "https://ak-d.tripcdn.com/images/0225p12000c3o6ywl6A36.jpg",
+                "https://ak-d.tripcdn.com/images/0225k12000odmw5dpA6FD.jpg",
+                "https://ak-d.tripcdn.com/images/0222t120009gxdgy24FA7.jpg",
+                "https://ak-d.tripcdn.com/images/0225q12000c3o6l5370B2.jpg",
+                "https://ak-d.tripcdn.com/images/0223g12000l1w7za4075F.jpg"
+            ],
+            "rates": [
+                {
+                    "rate_key": "1643222080_RE9XMY-1-Z-1",
+                    "room_code": "RE9XMY-1-Z-1",
+                    "physical_room_id": "347893525",
+                    "physical_room_name": "Superior Twin Room",
+                    "price_INR": 4698,
+                    "payment_method": "Prepay online",
+                    "meal_included": true,
+                    "meal_description": "Great breakfast for ₹ 799.00 (optional)",
+                    "guest_count": 2,
+                    "child_count": 0,
+                    "cancellation_policy": "Non-refundable",
+                    "free_cancellation": false,
+                    "confirmation_type": "Instant confirmation",
+                    "available": true,
+                    "rooms_remaining": 7,
+                    "sold_out": false,
+                    "offer_label": "Today's lowest price",
+                    "price_meta_info": [
+                        {
+                            "title": "1 room × 1 night",
+                            "content": "₹ 4,474.29",
+                            "meta_info": null
+                        },
+                        {
+                            "title": "Goods & services tax",
+                            "content": "₹ 223.71",
+                            "meta_info": null
+                        }
+                    ]
+                },
+                {
+                    "rate_key": "1643221833_RE9X1W-B-9-B",
+                    "room_code": "RE9X1W-B-9-B",
+                    "physical_room_id": "347893525",
+                    "physical_room_name": "Superior Twin Room",
+                    "price_INR": 5136.48,
+                    "payment_method": "Prepay online",
+                    "meal_included": true,
+                    "meal_description": "Includes 1 great breakfast",
+                    "guest_count": 1,
+                    "child_count": 0,
+                    "cancellation_policy": "Non-refundable",
+                    "free_cancellation": false,
+                    "confirmation_type": "Instant confirmation",
+                    "available": true,
+                    "rooms_remaining": 7,
+                    "sold_out": false,
+                    "offer_label": "Lowest price with meal(s)",
+                    "price_meta_info": [
+                        {
+                            "title": "1 room × 1 night",
+                            "content": "₹ 4,891.89",
+                            "meta_info": null
+                        },
+                        {
+                            "title": "Goods & services tax",
+                            "content": "₹ 244.59",
+                            "meta_info": null
+                        }
+                    ]
+                },
+                {
+                    "rate_key": "1643221833_RE9X1W-1-Z-1",
+                    "room_code": "RE9X1W-1-Z-1",
+                    "physical_room_id": "347893525",
+                    "physical_room_name": "Superior Twin Room",
+                    "price_INR": 5574.96,
+                    "payment_method": "Prepay online",
+                    "meal_included": true,
+                    "meal_description": "Includes 2 great breakfasts",
+                    "guest_count": 2,
+                    "child_count": 0,
+                    "cancellation_policy": "Non-refundable",
+                    "free_cancellation": false,
+                    "confirmation_type": "Instant confirmation",
+                    "available": true,
+                    "rooms_remaining": 7,
+                    "sold_out": false,
+                    "offer_label": "Breakfast included",
+                    "price_meta_info": [
+                        {
+                            "title": "1 room × 1 night",
+                            "content": "₹ 5,309.49",
+                            "meta_info": null
+                        },
+                        {
+                            "title": "Goods & services tax",
+                            "content": "₹ 265.47",
+                            "meta_info": null
+                        }
+                    ]
+                },
+                {
+                    "rate_key": "1674796345_RODODO-B-9-B",
+                    "room_code": "RODODO-B-9-B",
+                    "physical_room_id": "347893525",
+                    "physical_room_name": "Superior Twin Room",
+                    "price_INR": 5742,
+                    "payment_method": "Prepay online",
+                    "meal_included": true,
+                    "meal_description": "Includes breakfast and dinner for 1 guest",
+                    "guest_count": 1,
+                    "child_count": 0,
+                    "cancellation_policy": "Non-refundable",
+                    "free_cancellation": false,
+                    "confirmation_type": "Instant confirmation",
+                    "available": true,
+                    "rooms_remaining": 7,
+                    "sold_out": false,
+                    "offer_label": "Breakfast and dinner included",
+                    "price_meta_info": [
+                        {
+                            "title": "1 room × 1 night",
+                            "content": "₹ 5,468.57",
+                            "meta_info": null
+                        },
+                        {
+                            "title": "Goods & services tax",
+                            "content": "₹ 273.43",
+                            "meta_info": null
+                        }
+                    ]
+                },
+                {
+                    "rate_key": "1674796345_RODODO-1-Z-1",
+                    "room_code": "RODODO-1-Z-1",
+                    "physical_room_id": "347893525",
+                    "physical_room_name": "Superior Twin Room",
+                    "price_INR": 6786,
+                    "payment_method": "Prepay online",
+                    "meal_included": true,
+                    "meal_description": "Includes breakfast and dinner for 2 guests",
+                    "guest_count": 2,
+                    "child_count": 0,
+                    "cancellation_policy": "Non-refundable",
+                    "free_cancellation": false,
+                    "confirmation_type": "Instant confirmation",
+                    "available": true,
+                    "rooms_remaining": 7,
+                    "sold_out": false,
+                    "offer_label": "Breakfast and dinner included",
+                    "price_meta_info": [
+                        {
+                            "title": "1 room × 1 night",
+                            "content": "₹ 6,462.86",
+                            "meta_info": null
+                        },
+                        {
+                            "title": "Goods & services tax",
+                            "content": "₹ 323.14",
+                            "meta_info": null
+                        }
+                    ]
+                }
+            ],
+            "cheapest_price_INR": 4698,
+            "cheapest_offer": "Today's lowest price"
+        },
+        {
+            "physical_room_id": 547536348,
+            "name": "Superior Room With Queen Bed And Bay Window",
+            "bed_type": "1 double bed",
+            "area": "24㎡",
+            "view": "Window(s) that cannot be opened",
+            "smoking_policy": "Non-smoking",
+            "wifi": "Free Wi-Fi",
+            "facilities": [
+                "Window(s) that cannot be opened",
+                "Non-smoking",
+                "24㎡",
+                "Free Wi-Fi",
+                "Air conditioning (Cooling only)",
+                "Private bathroom"
+            ],
+            "images": [
+                "https://ak-d.tripcdn.com/images/0221v12000q8ot77s60FD.jpg",
+                "https://ak-d.tripcdn.com/images/0224c12000qbt9t8c215F.jpg",
+                "https://ak-d.tripcdn.com/images/0224h12000qbt9tar0089.jpg",
+                "https://ak-d.tripcdn.com/images/0225k12000odmw5dpA6FD.jpg",
+                "https://ak-d.tripcdn.com/images/0223e12000qbt9noeAF5C.jpg",
+                "https://ak-d.tripcdn.com/images/0224z12000q8ot7kb919D.jpg"
+            ],
+            "rates": [
+                {
+                    "rate_key": "1754218745_S34PTG-1-Z-1",
+                    "room_code": "S34PTG-1-Z-1",
+                    "physical_room_id": "547536348",
+                    "physical_room_name": "Superior Room With Queen Bed And Bay Window",
+                    "price_INR": 5220,
+                    "payment_method": "Prepay online",
+                    "meal_included": true,
+                    "meal_description": "Great breakfast for ₹ 799.00 (optional)",
+                    "guest_count": 2,
+                    "child_count": 0,
+                    "cancellation_policy": "Non-refundable",
+                    "free_cancellation": false,
+                    "confirmation_type": "Instant confirmation",
+                    "available": true,
+                    "rooms_remaining": 7,
+                    "sold_out": false,
+                    "offer_label": "Room only",
+                    "price_meta_info": [
+                        {
+                            "title": "1 room × 1 night",
+                            "content": "₹ 4,971.43",
+                            "meta_info": null
+                        },
+                        {
+                            "title": "Goods & services tax",
+                            "content": "₹ 248.57",
+                            "meta_info": null
+                        }
+                    ]
+                },
+                {
+                    "rate_key": "1754218733_S34PT5-B-9-B",
+                    "room_code": "S34PT5-B-9-B",
+                    "physical_room_id": "547536348",
+                    "physical_room_name": "Superior Room With Queen Bed And Bay Window",
+                    "price_INR": 5658.48,
+                    "payment_method": "Prepay online",
+                    "meal_included": true,
+                    "meal_description": "Includes 1 great breakfast",
+                    "guest_count": 1,
+                    "child_count": 0,
+                    "cancellation_policy": "Non-refundable",
+                    "free_cancellation": false,
+                    "confirmation_type": "Instant confirmation",
+                    "available": true,
+                    "rooms_remaining": 7,
+                    "sold_out": false,
+                    "offer_label": "Breakfast included",
+                    "price_meta_info": [
+                        {
+                            "title": "1 room × 1 night",
+                            "content": "₹ 5,389.03",
+                            "meta_info": null
+                        },
+                        {
+                            "title": "Goods & services tax",
+                            "content": "₹ 269.45",
+                            "meta_info": null
+                        }
+                    ]
+                },
+                {
+                    "rate_key": "1754218733_S34PT5-1-Z-1",
+                    "room_code": "S34PT5-1-Z-1",
+                    "physical_room_id": "547536348",
+                    "physical_room_name": "Superior Room With Queen Bed And Bay Window",
+                    "price_INR": 6096.96,
+                    "payment_method": "Prepay online",
+                    "meal_included": true,
+                    "meal_description": "Includes 2 great breakfasts",
+                    "guest_count": 2,
+                    "child_count": 0,
+                    "cancellation_policy": "Non-refundable",
+                    "free_cancellation": false,
+                    "confirmation_type": "Instant confirmation",
+                    "available": true,
+                    "rooms_remaining": 7,
+                    "sold_out": false,
+                    "offer_label": "Breakfast included",
+                    "price_meta_info": [
+                        {
+                            "title": "1 room × 1 night",
+                            "content": "₹ 5,806.63",
+                            "meta_info": null
+                        },
+                        {
+                            "title": "Goods & services tax",
+                            "content": "₹ 290.33",
+                            "meta_info": null
+                        }
+                    ]
+                },
+                {
+                    "rate_key": "1754218750_S34PTH-B-9-B",
+                    "room_code": "S34PTH-B-9-B",
+                    "physical_room_id": "547536348",
+                    "physical_room_name": "Superior Room With Queen Bed And Bay Window",
+                    "price_INR": 6264,
+                    "payment_method": "Prepay online",
+                    "meal_included": true,
+                    "meal_description": "Includes breakfast and dinner for 1 guest",
+                    "guest_count": 1,
+                    "child_count": 0,
+                    "cancellation_policy": "Non-refundable",
+                    "free_cancellation": false,
+                    "confirmation_type": "Instant confirmation",
+                    "available": true,
+                    "rooms_remaining": 7,
+                    "sold_out": false,
+                    "offer_label": "Breakfast and dinner included",
+                    "price_meta_info": [
+                        {
+                            "title": "1 room × 1 night",
+                            "content": "₹ 5,965.71",
+                            "meta_info": null
+                        },
+                        {
+                            "title": "Goods & services tax",
+                            "content": "₹ 298.29",
+                            "meta_info": null
+                        }
+                    ]
+                },
+                {
+                    "rate_key": "1754218750_S34PTH-1-Z-1",
+                    "room_code": "S34PTH-1-Z-1",
+                    "physical_room_id": "547536348",
+                    "physical_room_name": "Superior Room With Queen Bed And Bay Window",
+                    "price_INR": 7308,
+                    "payment_method": "Prepay online",
+                    "meal_included": true,
+                    "meal_description": "Includes breakfast and dinner for 2 guests",
+                    "guest_count": 2,
+                    "child_count": 0,
+                    "cancellation_policy": "Non-refundable",
+                    "free_cancellation": false,
+                    "confirmation_type": "Instant confirmation",
+                    "available": true,
+                    "rooms_remaining": 7,
+                    "sold_out": false,
+                    "offer_label": "Breakfast and dinner included",
+                    "price_meta_info": [
+                        {
+                            "title": "1 room × 1 night",
+                            "content": "₹ 6,960.00",
+                            "meta_info": null
+                        },
+                        {
+                            "title": "Goods & services tax",
+                            "content": "₹ 348.00",
+                            "meta_info": null
+                        }
+                    ]
+                }
+            ],
+            "cheapest_price_INR": 5220,
+            "cheapest_offer": "Room only"
+        },
+        {
+            "physical_room_id": 547536349,
+            "name": "Superior Room With 2 Single Beds And Bay Window",
+            "bed_type": "2 single beds",
+            "area": "24㎡",
+            "view": "Window(s) that cannot be opened",
+            "smoking_policy": "Non-smoking",
+            "wifi": "Free Wi-Fi",
+            "facilities": [
+                "Window(s) that cannot be opened",
+                "Non-smoking",
+                "24㎡",
+                "Free Wi-Fi",
+                "Air conditioning (Cooling only)",
+                "Private bathroom"
+            ],
+            "images": [
+                "https://ak-d.tripcdn.com/images/0226a12000qbt9vzdBFE2.jpg",
+                "https://ak-d.tripcdn.com/images/0221p12000q7ufpq88925.jpg",
+                "https://ak-d.tripcdn.com/images/0221i12000qbt9oav13BD.jpg",
+                "https://ak-d.tripcdn.com/images/0225k12000odmw5dpA6FD.jpg",
+                "https://ak-d.tripcdn.com/images/0223e12000qbt9noeAF5C.jpg",
+                "https://ak-d.tripcdn.com/images/0226f12000q8otc0u8344.jpg",
+                "https://ak-d.tripcdn.com/images/0223g12000l1w7za4075F.jpg"
+            ],
+            "rates": [
+                {
+                    "rate_key": "1754218744_S34PT7-1-Z-1",
+                    "room_code": "S34PT7-1-Z-1",
+                    "physical_room_id": "547536349",
+                    "physical_room_name": "Superior Room With 2 Single Beds And Bay Window",
+                    "price_INR": 5220,
+                    "payment_method": "Prepay online",
+                    "meal_included": true,
+                    "meal_description": "Great breakfast for ₹ 799.00 (optional)",
+                    "guest_count": 2,
+                    "child_count": 0,
+                    "cancellation_policy": "Non-refundable",
+                    "free_cancellation": false,
+                    "confirmation_type": "Instant confirmation",
+                    "available": true,
+                    "rooms_remaining": 7,
+                    "sold_out": false,
+                    "offer_label": "Room only",
+                    "price_meta_info": [
+                        {
+                            "title": "1 room × 1 night",
+                            "content": "₹ 4,971.43",
+                            "meta_info": null
+                        },
+                        {
+                            "title": "Goods & services tax",
+                            "content": "₹ 248.57",
+                            "meta_info": null
+                        }
+                    ]
+                },
+                {
+                    "rate_key": "1754218742_S34PT4-B-9-B",
+                    "room_code": "S34PT4-B-9-B",
+                    "physical_room_id": "547536349",
+                    "physical_room_name": "Superior Room With 2 Single Beds And Bay Window",
+                    "price_INR": 5658.48,
+                    "payment_method": "Prepay online",
+                    "meal_included": true,
+                    "meal_description": "Includes 1 great breakfast",
+                    "guest_count": 1,
+                    "child_count": 0,
+                    "cancellation_policy": "Non-refundable",
+                    "free_cancellation": false,
+                    "confirmation_type": "Instant confirmation",
+                    "available": true,
+                    "rooms_remaining": 7,
+                    "sold_out": false,
+                    "offer_label": "Breakfast included",
+                    "price_meta_info": [
+                        {
+                            "title": "1 room × 1 night",
+                            "content": "₹ 5,389.03",
+                            "meta_info": null
+                        },
+                        {
+                            "title": "Goods & services tax",
+                            "content": "₹ 269.45",
+                            "meta_info": null
+                        }
+                    ]
+                },
+                {
+                    "rate_key": "1754218742_S34PT4-1-Z-1",
+                    "room_code": "S34PT4-1-Z-1",
+                    "physical_room_id": "547536349",
+                    "physical_room_name": "Superior Room With 2 Single Beds And Bay Window",
+                    "price_INR": 6096.96,
+                    "payment_method": "Prepay online",
+                    "meal_included": true,
+                    "meal_description": "Includes 2 great breakfasts",
+                    "guest_count": 2,
+                    "child_count": 0,
+                    "cancellation_policy": "Non-refundable",
+                    "free_cancellation": false,
+                    "confirmation_type": "Instant confirmation",
+                    "available": true,
+                    "rooms_remaining": 7,
+                    "sold_out": false,
+                    "offer_label": "Breakfast included",
+                    "price_meta_info": [
+                        {
+                            "title": "1 room × 1 night",
+                            "content": "₹ 5,806.63",
+                            "meta_info": null
+                        },
+                        {
+                            "title": "Goods & services tax",
+                            "content": "₹ 290.33",
+                            "meta_info": null
+                        }
+                    ]
+                },
+                {
+                    "rate_key": "1754218738_S34PTK-B-9-B",
+                    "room_code": "S34PTK-B-9-B",
+                    "physical_room_id": "547536349",
+                    "physical_room_name": "Superior Room With 2 Single Beds And Bay Window",
+                    "price_INR": 6264,
+                    "payment_method": "Prepay online",
+                    "meal_included": true,
+                    "meal_description": "Includes breakfast and dinner for 1 guest",
+                    "guest_count": 1,
+                    "child_count": 0,
+                    "cancellation_policy": "Non-refundable",
+                    "free_cancellation": false,
+                    "confirmation_type": "Instant confirmation",
+                    "available": true,
+                    "rooms_remaining": 7,
+                    "sold_out": false,
+                    "offer_label": "Breakfast and dinner included",
+                    "price_meta_info": [
+                        {
+                            "title": "1 room × 1 night",
+                            "content": "₹ 5,965.71",
+                            "meta_info": null
+                        },
+                        {
+                            "title": "Goods & services tax",
+                            "content": "₹ 298.29",
+                            "meta_info": null
+                        }
+                    ]
+                },
+                {
+                    "rate_key": "1754218738_S34PTK-1-Z-1",
+                    "room_code": "S34PTK-1-Z-1",
+                    "physical_room_id": "547536349",
+                    "physical_room_name": "Superior Room With 2 Single Beds And Bay Window",
+                    "price_INR": 7308,
+                    "payment_method": "Prepay online",
+                    "meal_included": true,
+                    "meal_description": "Includes breakfast and dinner for 2 guests",
+                    "guest_count": 2,
+                    "child_count": 0,
+                    "cancellation_policy": "Non-refundable",
+                    "free_cancellation": false,
+                    "confirmation_type": "Instant confirmation",
+                    "available": true,
+                    "rooms_remaining": 7,
+                    "sold_out": false,
+                    "offer_label": "Breakfast and dinner included",
+                    "price_meta_info": [
+                        {
+                            "title": "1 room × 1 night",
+                            "content": "₹ 6,960.00",
+                            "meta_info": null
+                        },
+                        {
+                            "title": "Goods & services tax",
+                            "content": "₹ 348.00",
+                            "meta_info": null
+                        }
+                    ]
+                }
+            ],
+            "cheapest_price_INR": 5220,
+            "cheapest_offer": "Room only"
+        }
+    ],
+    "total_rates": 23
+}
